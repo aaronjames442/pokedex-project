@@ -8,7 +8,8 @@ public class Ability {
     private String description;
     private String effect;
 
-    public Ability(String name, String type, String description, String effect) {
+    public Ability(int id, String name, String type, String description, String effect) {
+        this.id = id;
         this.name = name;
         this.type = type;
         this.description = description;

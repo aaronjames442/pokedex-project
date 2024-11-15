@@ -11,5 +11,5 @@ public interface AbilityDao {
 
     boolean updateAbility(Ability ability);
 
-    Ability addAbility(Ability ability);
+    int addAbility(Ability ability);
 }
