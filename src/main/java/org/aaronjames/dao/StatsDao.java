@@ -11,7 +11,7 @@ public interface StatsDao {
 
     boolean updateStats(Stats stats);
 
-    Stats addStats(Stats stats);
+    int addStats(Stats stats);
 
 
 }

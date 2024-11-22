@@ -2,7 +2,7 @@ package org.aaronjames.model;
 
 import java.util.List;
 
-public class Type {
+public class ElementType {
 
     private int id;
     private String name;
@@ -11,13 +11,19 @@ public class Type {
     private String description;
     private String color;
 
-    public Type(String name, List<String> strengths, List<String> weaknesses, String description, String color) {
+    public ElementType(int id, String name, List<String> strengths, List<String> weaknesses, String description, String color) {
+        this.id = id;
         this.name = name;
         this.strengths = strengths;
         this.weaknesses = weaknesses;
         this.description = description;
         this.color = color;
     }
+
+    public int getId() {
+        return id;
+    }
+
 
 
     public void setId(int id) {
